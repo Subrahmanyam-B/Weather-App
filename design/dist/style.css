@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&family=Rubik:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&family=Red+Hat+Text:wght@700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h1, h3 {
+  font-weight: 400;
+}
+
+.weather-app {
+  min-height: 100vh;
+  background-image: url(/assests/bg/day-cloudy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  transition: 500ms;
+  opacity: 1;
+}
+
+.weather-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.panel {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding-left: 3rem;
+}
+
+.brand {
+  padding: 1.5rem 5rem;
+  font-size: 1.5rem;
+}
+
+.info {
+  display: flex;
+  padding: 5rem;
+  padding-bottom: 8rem;
+  align-items: center;
+  transition: 500ms;
+}
+
+.temp {
+  font-size: 7rem;
+  padding-right: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.city-name {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#deg {
+  font-weight: 500;
+  font-size: 5rem;
+  position: relative;
+  top: -1.5rem;
+}
+
+small {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+form {
+  height: 5rem;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  position: absolute;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  background-color: inherit;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  height: 2rem;
+  border: none;
+}
+input::-moz-placeholder {
+  color: white;
+}
+input:-ms-input-placeholder {
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 5rem;
+  max-width: 20rem;
+}
+
+.weather-tag {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 200;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+ul {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  font-weight: 100;
+}
+
+.cities {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  gap: 2rem;
+  padding-left: 0;
+  padding: 3rem 0rem;
+  border-top: 1px solid white;
+  margin-right: 7rem;
+}
+.cities li {
+  cursor: pointer;
+}
+
+.details {
+  border-top: 1px solid white;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  height: 40%;
+  padding-left: 0;
+  margin-right: 5rem;
+  cursor: default;
+}
+.details li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .panel, .container {
+    position: relative;
+    width: 100%;
+    top: initial;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .brand {
+    padding: 1.5rem;
+  }
+  .weather {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .weather-app {
+    min-height: 40em;
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

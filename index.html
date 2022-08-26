@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet"   href="/design/dist/style.css">
+   <title>Weather App</title>
+</head>
+<body>
+   <div class="weather-app">
+      <div class="container">
+         <h3 class = "brand">the weather</h3>
+
+         <div class="info has-fade">
+            <div class="temp-div">
+               <h1 class="temp">
+                  16&#176;
+               </h1>
+            </div>
+            <div class="city-time">
+               <h1 class="city-name">London</h1>
+               <small>
+                  <span class="time">06:09</span> - <span class="date">Monday Sep 19</span>
+               </small>
+            </div>
+
+            <div class="weather">
+               <svg class = "icon" width="5rem" height="5rem" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23 3C23 2.44772 23.4477 2 24 2C24.5523 2 25 2.44772 25 3V8C25 8.55228 24.5523 9 24 9C23.4477 9 23 8.55228 23 8V3Z" fill="#ffffff"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 36C30.6274 36 36 30.6274 36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 30.6274 17.3726 36 24 36ZM24 34C29.5228 34 34 29.5228 34 24C34 18.4772 29.5228 14 24 14C18.4772 14 14 18.4772 14 24C14 29.5228 18.4772 34 24 34Z" fill="#ffffff"/>
+                  <path d="M23 40C23 39.4477 23.4477 39 24 39C24.5523 39 25 39.4477 25 40V45C25 45.5523 24.5523 46 24 46C23.4477 46 23 45.5523 23 45V40Z" fill="#ffffff"/>
+                  <path d="M13.3936 34.6065C13.0031 34.216 12.3699 34.216 11.9794 34.6065L8.44388 38.1421C8.05336 38.5326 8.05336 39.1657 8.44388 39.5563C8.83441 39.9468 9.46757 39.9468 9.8581 39.5563L13.3936 36.0207C13.7842 35.6302 13.7842 34.997 13.3936 34.6065Z" fill="#ffffff"/>
+                  <path d="M40 25C39.4477 25 39 24.5523 39 24C39 23.4477 39.4477 23 40 23H45C45.5523 23 46 23.4477 46 24C46 24.5523 45.5523 25 45 25H40Z" fill="#ffffff"/>
+                  <path d="M34.6065 34.6064C34.216 34.9969 34.216 35.6301 34.6065 36.0206L38.1421 39.5561C38.5326 39.9466 39.1657 39.9466 39.5563 39.5561C39.9468 39.1656 39.9468 38.5324 39.5563 38.1419L36.0207 34.6064C35.6302 34.2158 34.997 34.2158 34.6065 34.6064Z" fill="#ffffff"/>
+                  <path d="M39.5567 8.44343C39.1662 8.05291 38.533 8.05291 38.1425 8.44343L34.607 11.979C34.2164 12.3695 34.2164 13.0027 34.607 13.3932C34.9975 13.7837 35.6307 13.7837 36.0212 13.3932L39.5567 9.85765C39.9472 9.46712 39.9472 8.83396 39.5567 8.44343Z" fill="#ffffff"/>
+                  <path d="M3 25C2.44772 25 2 24.5523 2 24C2 23.4477 2.44772 23 3 23H8C8.55228 23 9 23.4477 9 24C9 24.5523 8.55228 25 8 25H3Z" fill="#ffffff"/>
+                  <path d="M8.44343 8.44377C8.05291 8.8343 8.05291 9.46746 8.44343 9.85799L11.979 13.3935C12.3695 13.784 13.0027 13.784 13.3932 13.3935C13.7837 13.003 13.7837 12.3698 13.3932 11.9793L9.85765 8.44377C9.46712 8.05325 8.83396 8.05325 8.44343 8.44377Z" fill="#ffffff"/>
+               </svg>
+               <h3 class="weather-tag">Sunny</h4>
+            </div>
+         </div>
+      </div>
+      <div class="panel">
+         <form id="locationInput">
+            <input type="text" class="search" placeholder="Search City"></input>
+            <button type="submit" class="submit">
+               <svg id = "search-icon" width="2rem" height="2rem" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929L18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z" fill="white"/>
+               </svg>
+            </button>
+         </form>
+
+         <ul class="cities">
+            <li class="city">New York</li>
+            <li class="city">California</li>
+            <li class="city">Paris</li>
+            <li class="city">Tokyo</li>
+         </ul>
+         <ul class="details">
+            <h4>Weather Details</h4>
+            <li><span>Cloudy</span><span class="cloud">89%</span></li>
+            <li><span>Humidity</span><span class="humidity">89%</span></li>
+            <li><span>Wind</span><span class="wind">8km/h</span></li>
+         </ul>
+      </div>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>

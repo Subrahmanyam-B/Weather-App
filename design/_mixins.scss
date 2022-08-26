@@ -1,0 +1,36 @@
+@media screen and (max-width: 800px) {
+   .panel , .container{
+      position: relative;
+      width: 100%;
+      top: initial;
+   }
+}
+
+@media screen and (max-width : 600px) {
+   .info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 0 ;  
+   }
+
+   .brand {
+      padding: 1.5rem;
+   }
+
+   .weather{
+      padding-left: 0;
+   }
+}
+@media screen and (max-width : 400px) {
+   html {
+      font-size: 12px;
+   }
+}
+
+@media screen and (max-width : 300px) {
+   .weather-app{
+      min-height: 40em;
+      width: auto;
+   }
+}
